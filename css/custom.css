@@ -1,0 +1,56 @@
+.weather {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Высота на весь экран */
+  display: flex;
+
+  /* background: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG9jZjViejJlemE4M2R3ZmZyZTVzYXM0NTI0Yno4bjV2cDh0cGllZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uf7rNGInuNUZJ9MAVb/giphy.gif"); */
+  background: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJpOWh4eGE5cnNndGs2bDZpZjh6ZGJpdzI5MXIzOGhhMjExdGNjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CkBzt6qXCCXw4/giphy.gif");
+  /* background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZtODRsYTk5enlxZXpnOGV0ajR3dDhvZjN3YWdtc3pmejBnZTUydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lSzQjkthGS1gc/giphy.gif') no-repeat center center fixed;  */
+  /* background: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHc1dzEweXg1YXZuYWswcHUwbDk2ZTNldXM2cjVzbXB0bTNiM21icSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DiIJZ2en45sfdb9pKx/giphy.gif"); */
+  background-size: cover; /* Масштабируем GIF на весь экран */
+  font-family: Arial, sans-serif;
+  color: white; /* Цвет текста */
+  text-align: center;
+}
+
+.bb {
+  border: 2px solid red;
+}
+
+.main-bg {
+  background: linear-gradient(180deg, #3a6ceb, #2271c6);
+  color: white;
+}
+
+.color-text {
+  color: #a8c4f0;
+}
+
+.custom-bg {
+  background-color: #a8c4f0;
+}
+
+.weather-icon {
+  width: 100px; /* Увеличиваем ширину */
+  height: 100px; /* Увеличиваем высоту */
+  filter: drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.8)
+  ); /* Добавляем светлый эффект */
+  border-radius: 50%; /* Делаем края круглые */
+  background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+  padding: 10px; /* Внутренний отступ */
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Экранда ҳаракатланмаслиги учун */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Бутун экран кенглиги */
+  height: 100vh; /* Бутун экран баландлиги */
+  background-color: rgba(0, 0, 0, 0.5); /* Ярим шаффоф фон (ихтиёрий) */
+  z-index: 1050; /* Бошқа элементлар устида кўриниши учун */
+}
